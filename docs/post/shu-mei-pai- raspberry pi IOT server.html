@@ -47,6 +47,63 @@ cd IOTstack/
 - 创建数据库 `CREATE DATABASE hmi_data`
 - 退出 `quit`
 
+### 访问portainer
+- 需要在启动后5分钟内在ip:9000进入界面设置用户名和密码
+
+![Image](https://github.com/user-attachments/assets/73b54985-25bc-4652-bd66-2d87e065d5f3)
+
+### 访问nodered
+- ip:1880 (默认)
+- 例子：
+
+![Image](https://github.com/user-attachments/assets/963c5538-be85-4630-a909-fec87a3406c4)
+- 点击mqtt
+- 侧边弹窗点击 + （新建服务端 ）
+
+![Image](https://github.com/user-attachments/assets/09ee742a-c6bf-4798-9c7c-292131d0529d)
+- 配置 mqtt
+
+![Image](https://github.com/user-attachments/assets/a87bdeb5-3f7f-43f1-8476-71e61dd04adf)
+
+![Image](https://github.com/user-attachments/assets/c250f3bb-e191-42ff-9bc6-be9c14b8db04)
+
+- 配置change node
+
+![Image](https://github.com/user-attachments/assets/7f27002a-cdb4-4ec2-9b09-963dd66eb716)
+输入
+![Image](https://github.com/user-attachments/assets/16809bee-96a8-4a67-ab1d-8fcb7f85ad04)
+
+-配置database
+
+![Image](https://github.com/user-attachments/assets/c697aaa2-4ecd-4bb8-95c5-38dff850d872)
+
+![Image](https://github.com/user-attachments/assets/1c32909b-8167-494d-86f9-34064b57b17d)
+
+-部署
+
+![Image](https://github.com/user-attachments/assets/32c17bc9-c73f-42e7-ba84-d9cd1095b0f2)
+
+### 访问grafana
+- IP:3000 (default)
+- 初始用户名:admin
+- 密码：admin
+- 登陆后修改新密码
+- 
+
+![Image](https://github.com/user-attachments/assets/0f1c6d12-b36f-4b5b-b1ff-de61aba84d09)
+- 选择influxdb
+- 配置influxdb
+![Image](https://github.com/user-attachments/assets/4f6d30c4-7ed2-498e-9e05-a5cfec0a66ae)
+![Image](https://github.com/user-attachments/assets/8978c5c6-725c-4e89-84fd-57d459981ab0)
+- 点击Save and test， 配置无误会显示datasource is working
+- 创建dashboard
+![Image](https://github.com/user-attachments/assets/7aa1b249-6043-4395-a993-12b12c6b6dc1)
+![Image](https://github.com/user-attachments/assets/2cc4c578-e5e0-4dbd-972d-0b912b547c36)
+- 点击save dashboard 保存
+![Image](https://github.com/user-attachments/assets/5ac75427-5967-4cea-9dce-adfa15279a86)
+
+# 完成
+
 **来源： https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server**。">
 <meta property="og:title" content="树莓派 raspberry pi IOT server">
 <meta property="og:description" content="### 确保一切是最新版本
@@ -85,6 +142,63 @@ cd IOTstack/
 - 进入container启动数据库`docker exec -it influxdb influx`
 - 创建数据库 `CREATE DATABASE hmi_data`
 - 退出 `quit`
+
+### 访问portainer
+- 需要在启动后5分钟内在ip:9000进入界面设置用户名和密码
+
+![Image](https://github.com/user-attachments/assets/73b54985-25bc-4652-bd66-2d87e065d5f3)
+
+### 访问nodered
+- ip:1880 (默认)
+- 例子：
+
+![Image](https://github.com/user-attachments/assets/963c5538-be85-4630-a909-fec87a3406c4)
+- 点击mqtt
+- 侧边弹窗点击 + （新建服务端 ）
+
+![Image](https://github.com/user-attachments/assets/09ee742a-c6bf-4798-9c7c-292131d0529d)
+- 配置 mqtt
+
+![Image](https://github.com/user-attachments/assets/a87bdeb5-3f7f-43f1-8476-71e61dd04adf)
+
+![Image](https://github.com/user-attachments/assets/c250f3bb-e191-42ff-9bc6-be9c14b8db04)
+
+- 配置change node
+
+![Image](https://github.com/user-attachments/assets/7f27002a-cdb4-4ec2-9b09-963dd66eb716)
+输入
+![Image](https://github.com/user-attachments/assets/16809bee-96a8-4a67-ab1d-8fcb7f85ad04)
+
+-配置database
+
+![Image](https://github.com/user-attachments/assets/c697aaa2-4ecd-4bb8-95c5-38dff850d872)
+
+![Image](https://github.com/user-attachments/assets/1c32909b-8167-494d-86f9-34064b57b17d)
+
+-部署
+
+![Image](https://github.com/user-attachments/assets/32c17bc9-c73f-42e7-ba84-d9cd1095b0f2)
+
+### 访问grafana
+- IP:3000 (default)
+- 初始用户名:admin
+- 密码：admin
+- 登陆后修改新密码
+- 
+
+![Image](https://github.com/user-attachments/assets/0f1c6d12-b36f-4b5b-b1ff-de61aba84d09)
+- 选择influxdb
+- 配置influxdb
+![Image](https://github.com/user-attachments/assets/4f6d30c4-7ed2-498e-9e05-a5cfec0a66ae)
+![Image](https://github.com/user-attachments/assets/8978c5c6-725c-4e89-84fd-57d459981ab0)
+- 点击Save and test， 配置无误会显示datasource is working
+- 创建dashboard
+![Image](https://github.com/user-attachments/assets/7aa1b249-6043-4395-a993-12b12c6b6dc1)
+![Image](https://github.com/user-attachments/assets/2cc4c578-e5e0-4dbd-972d-0b912b547c36)
+- 点击save dashboard 保存
+![Image](https://github.com/user-attachments/assets/5ac75427-5967-4cea-9dce-adfa15279a86)
+
+# 完成
 
 **来源： https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server**。">
 <meta property="og:type" content="article">
@@ -174,6 +288,60 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>创建数据库 <code class="notranslate">CREATE DATABASE hmi_data</code></li>
 <li>退出 <code class="notranslate">quit</code></li>
 </ul>
+<h3>访问portainer</h3>
+<ul>
+<li>需要在启动后5分钟内在ip:9000进入界面设置用户名和密码</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/73b54985-25bc-4652-bd66-2d87e065d5f3"><img src="https://github.com/user-attachments/assets/73b54985-25bc-4652-bd66-2d87e065d5f3" alt="Image" style="max-width: 100%;"></a></p>
+<h3>访问nodered</h3>
+<ul>
+<li>ip:1880 (默认)</li>
+<li>例子：</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/963c5538-be85-4630-a909-fec87a3406c4"><img src="https://github.com/user-attachments/assets/963c5538-be85-4630-a909-fec87a3406c4" alt="Image" style="max-width: 100%;"></a></p>
+<ul>
+<li>点击mqtt</li>
+<li>侧边弹窗点击 + （新建服务端 ）</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/09ee742a-c6bf-4798-9c7c-292131d0529d"><img src="https://github.com/user-attachments/assets/09ee742a-c6bf-4798-9c7c-292131d0529d" alt="Image" style="max-width: 100%;"></a></p>
+<ul>
+<li>配置 mqtt</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a87bdeb5-3f7f-43f1-8476-71e61dd04adf"><img src="https://github.com/user-attachments/assets/a87bdeb5-3f7f-43f1-8476-71e61dd04adf" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c250f3bb-e191-42ff-9bc6-be9c14b8db04"><img src="https://github.com/user-attachments/assets/c250f3bb-e191-42ff-9bc6-be9c14b8db04" alt="Image" style="max-width: 100%;"></a></p>
+<ul>
+<li>配置change node</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7f27002a-cdb4-4ec2-9b09-963dd66eb716"><img src="https://github.com/user-attachments/assets/7f27002a-cdb4-4ec2-9b09-963dd66eb716" alt="Image" style="max-width: 100%;"></a><br>
+输入<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/16809bee-96a8-4a67-ab1d-8fcb7f85ad04"><img src="https://github.com/user-attachments/assets/16809bee-96a8-4a67-ab1d-8fcb7f85ad04" alt="Image" style="max-width: 100%;"></a></p>
+<p>-配置database</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c697aaa2-4ecd-4bb8-95c5-38dff850d872"><img src="https://github.com/user-attachments/assets/c697aaa2-4ecd-4bb8-95c5-38dff850d872" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1c32909b-8167-494d-86f9-34064b57b17d"><img src="https://github.com/user-attachments/assets/1c32909b-8167-494d-86f9-34064b57b17d" alt="Image" style="max-width: 100%;"></a></p>
+<p>-部署</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/32c17bc9-c73f-42e7-ba84-d9cd1095b0f2"><img src="https://github.com/user-attachments/assets/32c17bc9-c73f-42e7-ba84-d9cd1095b0f2" alt="Image" style="max-width: 100%;"></a></p>
+<h3>访问grafana</h3>
+<ul>
+<li>IP:3000 (default)</li>
+<li>初始用户名:admin</li>
+<li>密码：admin</li>
+<li>登陆后修改新密码</li>
+<li></li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0f1c6d12-b36f-4b5b-b1ff-de61aba84d09"><img src="https://github.com/user-attachments/assets/0f1c6d12-b36f-4b5b-b1ff-de61aba84d09" alt="Image" style="max-width: 100%;"></a></p>
+<ul>
+<li>选择influxdb</li>
+<li>配置influxdb<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4f6d30c4-7ed2-498e-9e05-a5cfec0a66ae"><img src="https://github.com/user-attachments/assets/4f6d30c4-7ed2-498e-9e05-a5cfec0a66ae" alt="Image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8978c5c6-725c-4e89-84fd-57d459981ab0"><img src="https://github.com/user-attachments/assets/8978c5c6-725c-4e89-84fd-57d459981ab0" alt="Image" style="max-width: 100%;"></a></li>
+<li>点击Save and test， 配置无误会显示datasource is working</li>
+<li>创建dashboard<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7aa1b249-6043-4395-a993-12b12c6b6dc1"><img src="https://github.com/user-attachments/assets/7aa1b249-6043-4395-a993-12b12c6b6dc1" alt="Image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2cc4c578-e5e0-4dbd-972d-0b912b547c36"><img src="https://github.com/user-attachments/assets/2cc4c578-e5e0-4dbd-972d-0b912b547c36" alt="Image" style="max-width: 100%;"></a></li>
+<li>点击save dashboard 保存<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5ac75427-5967-4cea-9dce-adfa15279a86"><img src="https://github.com/user-attachments/assets/5ac75427-5967-4cea-9dce-adfa15279a86" alt="Image" style="max-width: 100%;"></a></li>
+</ul>
+<h1>完成</h1>
 <p><strong>来源： <a href="https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server" rel="nofollow">https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server</a></strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
@@ -233,7 +401,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 
 
 function openComments(){
