@@ -1,5 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Law's Blog</title><link>https://lawpowen.github.io</link><description>My notebook</description><copyright>Law's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lawpowen.github.io</link></image><lastBuildDate>Wed, 26 Feb 2025 02:09:25 +0000</lastBuildDate><managingEditor>Law's Blog</managingEditor><ttl>60</ttl><webMaster>Law's Blog</webMaster><item><title>Raspberry Pi 超频和官方风扇调整方式</title><link>https://lawpowen.github.io/post/Raspberry%20Pi%20-chao-pin-he-guan-fang-feng-shan-diao-zheng-fang-shi.html</link><description>##  处理器超频
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Law's Blog</title><link>https://lawpowen.github.io</link><description>My notebook</description><copyright>Law's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lawpowen.github.io</link></image><lastBuildDate>Wed, 26 Feb 2025 02:20:57 +0000</lastBuildDate><managingEditor>Law's Blog</managingEditor><ttl>60</ttl><webMaster>Law's Blog</webMaster><item><title>Nuitka 打包python 程序</title><link>https://lawpowen.github.io/post/Nuitka%20-da-bao-python%20-cheng-xu.html</link><description>转载自 https://www.cnblogs.com/smallbike/p/nuitka.html#%E6%89%93%E5%8C%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8nuitka---help%E5%8F%AF%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%91%BD%E4%BB%A4
+ 
+### Windows
+```
+pip install ordered-set # 加速编译
+pip install nuitka
+pip install zstandard # onefile时压缩文件
+# 打包命令
+python -m nuitka --mingw64 --standalone --output-dir=out --show-progress --onefile --plugin-enable=upx --enable-plugin=tk-inter --windows-disable-console pack_seckill.py
+```
+### Linux
+```
+    pip install ordered-set # 加速编译
+    pip install nuitka
+    pip install zstandard # onefile时压缩文件
+    下载upx  onefile时压缩文件,  --plugin-enable=upx --upx-binary={upx}
+    conda install libpython-static
+    sudo yum -y install swig gcc gcc-c++ kernel-devel
+    yum install patchelf
+    yum -y install centos-release-scl
+    yum -y install devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils
+    ####gcc报错
+    yum update binutils.x86_64
+    python -m nuitka --standalone --output-dir=out --show-progress --plugin-enable=upx --upx-binary=/root/pack_seckill/upx/upx pack_seckill.py
+    ./pack_seckill.bin
+```
+### Ubuntu
+```
+    pip install ordered-set # 加速编译
+    pip install nuitka
+    pip install zstandard # onefile时压缩文件
+    下载upx  onefile时压缩文件,  --plugin-enable=upx --upx-binary={upx}
+    conda install libpython-static
+    sudo apt-get update
+    # gcc报错
+    conda install gcc_linux-64
+    conda install gxx_linux-64
+    # 打包命令
+    python -m nuitka --standalone --output-dir=out --show-progress --onefile --plugin-enable=upx --upx-binary=/home/ubuntu/pack_seckill/upx/upx pack_seckill.py
+    sudo chmod +x ./pack_seckill.bin
+    ./pack_seckill.bin
+```
+### 打包常用命令。</description><guid isPermaLink="true">https://lawpowen.github.io/post/Nuitka%20-da-bao-python%20-cheng-xu.html</guid><pubDate>Wed, 26 Feb 2025 02:20:33 +0000</pubDate></item><item><title>Raspberry Pi 超频和官方风扇调整方式</title><link>https://lawpowen.github.io/post/Raspberry%20Pi%20-chao-pin-he-guan-fang-feng-shan-diao-zheng-fang-shi.html</link><description>##  处理器超频
 1. 超频 Raspberry Pi 5
 ```bash
 sudo nano /boot/firmware/config.txt
