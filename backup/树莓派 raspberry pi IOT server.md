@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Law's Blog</title><link>https://lawpowen.github.io</link><description>My notebook</description><copyright>Law's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lawpowen.github.io</link></image><lastBuildDate>Wed, 26 Feb 2025 02:03:05 +0000</lastBuildDate><managingEditor>Law's Blog</managingEditor><ttl>60</ttl><webMaster>Law's Blog</webMaster><item><title>树莓派 raspberry pi IOT server</title><link>https://lawpowen.github.io/post/shu-mei-pai-%20raspberry%20pi%20IOT%20server.html</link><description>### 确保一切是最新版本
+### 确保一切是最新版本
 
 `sudo apt update
 sudo apt upgrade`
@@ -93,4 +92,4 @@ cd IOTstack/
 
 # 完成
 
-**来源： https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server**。</description><guid isPermaLink="true">https://lawpowen.github.io/post/shu-mei-pai-%20raspberry%20pi%20IOT%20server.html</guid><pubDate>Wed, 19 Feb 2025 01:21:19 +0000</pubDate></item><item><title>testing</title><link>https://lawpowen.github.io/post/testing.html</link><description>Hello World！。</description><guid isPermaLink="true">https://lawpowen.github.io/post/testing.html</guid><pubDate>Wed, 29 Jan 2025 12:54:31 +0000</pubDate></item></channel></rss>
+**来源： https://learnembeddedsystems.co.uk/easy-raspberry-pi-iot-server**
