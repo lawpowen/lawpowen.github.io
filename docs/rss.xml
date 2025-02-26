@@ -1,5 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Law's Blog</title><link>https://lawpowen.github.io</link><description>My notebook</description><copyright>Law's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lawpowen.github.io</link></image><lastBuildDate>Wed, 26 Feb 2025 02:03:05 +0000</lastBuildDate><managingEditor>Law's Blog</managingEditor><ttl>60</ttl><webMaster>Law's Blog</webMaster><item><title>树莓派 raspberry pi IOT server</title><link>https://lawpowen.github.io/post/shu-mei-pai-%20raspberry%20pi%20IOT%20server.html</link><description>### 确保一切是最新版本
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Law's Blog</title><link>https://lawpowen.github.io</link><description>My notebook</description><copyright>Law's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lawpowen.github.io</link></image><lastBuildDate>Wed, 26 Feb 2025 02:08:18 +0000</lastBuildDate><managingEditor>Law's Blog</managingEditor><ttl>60</ttl><webMaster>Law's Blog</webMaster><item><title>Raspberry Pi 超频和官方风扇调整</title><link>https://lawpowen.github.io/post/Raspberry%20Pi%20-chao-pin-he-guan-fang-feng-shan-diao-zheng.html</link><description>##  处理器超频
+1. 超频 Raspberry Pi 5
+```bash
+sudo nano /boot/firmware/config.txt
+``` 
+```
+[all]
+over_voltage=8
+arm_freq=3000
+gpu_freq=1000
+```
+🔹 over_voltage=8 → 提高 CPU 电压，避免超频崩溃
+🔹 arm_freq=3000 → 超频到 3.0GHz（可以调低，比如 2800）
+🔹 gpu_freq=1000 → 提高 GPU 频率，提升图形性能
+
+如果你使用主动散热（风扇），可以尝试更高的 arm_freq，但 3.0GHz 已经是比较极限的值。</description><guid isPermaLink="true">https://lawpowen.github.io/post/Raspberry%20Pi%20-chao-pin-he-guan-fang-feng-shan-diao-zheng.html</guid><pubDate>Fri, 21 Feb 2025 01:24:12 +0000</pubDate></item><item><title>树莓派 raspberry pi IOT server</title><link>https://lawpowen.github.io/post/shu-mei-pai-%20raspberry%20pi%20IOT%20server.html</link><description>### 确保一切是最新版本
 
 `sudo apt update
 sudo apt upgrade`
