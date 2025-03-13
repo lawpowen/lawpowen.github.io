@@ -14,13 +14,8 @@ python -m nuitka --mingw64 --standalone --output-dir=out --show-progress --onefi
     pip install nuitka
     pip install zstandard # onefile时压缩文件
     下载upx  onefile时压缩文件,  --plugin-enable=upx --upx-binary={upx}
-    conda install libpython-static
-    sudo yum -y install swig gcc gcc-c++ kernel-devel
-    yum install patchelf
-    yum -y install centos-release-scl
-    yum -y install devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils
-    ####gcc报错
-    yum update binutils.x86_64
+    sudo apt update
+    sudo apt install patchelf -y
     python -m nuitka --standalone --output-dir=out --show-progress --plugin-enable=upx --upx-binary=/root/pack_seckill/upx/upx pack_seckill.py
     ./pack_seckill.bin
 ```
